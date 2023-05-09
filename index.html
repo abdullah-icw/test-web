@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube Video Downloader</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>YouTube Video Downloader</h1>
+	<form method="post" action="download.php">
+		<label for="url">Enter YouTube Video URL:</label>
+		<input type="text" name="url" id="url" required>
+		<label for="quality">Select Video Quality:</label>
+		<select name="quality" id="quality">
+			<option value="highest">Highest</option>
+			<option value="1080p">1080p</option>
+			<option value="720p">720p</option>
+			<option value="480p">480p</option>
+			<option value="360p">360p</option>
+			<option value="240p">240p</option>
+			<option value="lowest">Lowest</option>
+		</select>
+		<button type="submit">Download</button>
+	</form>
+	<script src="/js/script.js"></script>
+
+</body>
+</html>
